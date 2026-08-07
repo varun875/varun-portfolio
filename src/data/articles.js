@@ -168,7 +168,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/redmi-watch-5-active-review-2026/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/02/Thumbnail-1_20260226_184920.png",
     featured: true,
-    views: "9.8K",
+    views: "985",
     likes: "310",
     tags: ["Redmi Watch 5 Active", "Smartwatch Review", "Budget Tech", "Wearables", "Xiaomi"],
     tableOfContents: [
