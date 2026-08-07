@@ -100,13 +100,34 @@ export function Navbar({ theme, toggleTheme, onOpenContact, searchQuery, setSear
           background: transparent;
         }
 
+        .navbar-header::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          height: 45px;
+          background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(9, 13, 22, 0.7) 40%, transparent 100%);
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity var(--transition-normal);
+        }
+
+        [data-theme="paper"] .navbar-header::after {
+          background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(251, 249, 244, 0.7) 40%, transparent 100%);
+        }
+
         .navbar-header.scrolled {
           padding: 0.85rem 0;
           background: var(--bg-glass);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border-bottom: 1px solid var(--border-color);
-          box-shadow: var(--shadow-sm);
+          box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.6);
+        }
+
+        .navbar-header.scrolled::after {
+          opacity: 1;
         }
 
         .navbar-container {
