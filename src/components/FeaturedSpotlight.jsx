@@ -25,7 +25,7 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
                 <span className="meta-sep">•</span>
                 <span className="meta-item"><Clock size={13} /> {lead.readTime}</span>
                 <span className="meta-sep">•</span>
-                <span className="meta-item"><Eye size={13} /> {lead.views} Reads</span>
+                <span className="meta-item"><Eye size={13} /> {lead.views} Views</span>
               </div>
 
               <h2 className="spotlight-title" onClick={() => onSelectArticle(lead)}>

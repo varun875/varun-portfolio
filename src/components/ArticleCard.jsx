@@ -59,9 +59,9 @@ export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBo
         {/* Card Footer */}
         <div className="card-footer-row">
           <div className="card-stats">
-            <span className="stat-item" title="Total Reads">
+            <span className="stat-item" title="Total Views">
               <Eye size={14} />
-              {article.views} Reads
+              {article.views} Views
             </span>
             <span className="stat-item" title="Applauds & Likes">
               <ThumbsUp size={13} />
