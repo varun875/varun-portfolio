@@ -141,7 +141,7 @@ export function Hero({ onOpenContact, onExploreArticles }) {
 
         .hero-stats-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 1.25rem;
           padding-top: 2rem;
           border-top: 1px solid var(--border-color);

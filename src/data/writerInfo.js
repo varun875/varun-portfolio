@@ -13,10 +13,9 @@ export const writerInfo = {
     gizmogeekhub: "https://gizmogeekhub.com/"
   },
   stats: [
-    { label: "Articles Published", value: "95" },
-    { label: "Experience", value: "2+ Years" },
-    { label: "Published In", value: "GizmoGeekHub" },
-    { label: "Role", value: "Senior Content Writer" }
+    { label: "Articles Published", value: "95+" },
+    { label: "Years Experience", value: "2+" },
+    { label: "Published In", value: "GGH" }
   ],
   featuredPublications: [
     { name: "GizmoGeekHub", logoText: "GizmoGeekHub", badge: "Senior Content Writer" }
