@@ -13,7 +13,6 @@ export const articles = [
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/06/Thumbnail-1-9-2.png",
     featured: true,
     views: "123",
-    likes: "642",
     tags: ["Redmi Turbo 5", "Dimensity 8500 Ultra", "Smartphone", "HyperOS 3", "Tech News"],
     tableOfContents: [
       { id: "design", title: "Design & Turbo Matrix" },
@@ -69,7 +68,6 @@ export const articles = [
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/05/Thumbnail-1_20260520_201248.png",
     featured: true,
     views: "275",
-    likes: "890",
     tags: ["Google IO 2026", "Gemini 3.5 Flash", "Antigravity CLI", "TPU 8t", "AI News"],
     tableOfContents: [
       { id: "gemini-flash", title: "Gemini 3.5 Flash Speed" },
@@ -107,7 +105,6 @@ export const articles = [
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/05/Thumbnail-1_20260515_111232.png",
     featured: true,
     views: "243",
-    likes: "512",
     tags: ["OnePlus Nord CE6", "Snapdragon 7s Gen 4", "8000mAh", "OxygenOS 16"],
     tableOfContents: [
       { id: "design-build", title: "Design & IP69 Rating" },
@@ -142,7 +139,6 @@ export const articles = [
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/04/Thumbnail-1-7-2.png",
     featured: false,
     views: "249",
-    likes: "430",
     tags: ["OPPO Find X9 Ultra", "Hasselblad", "200MP Camera", "Flagship Phone"],
     tableOfContents: [
       { id: "hasselblad-camera", title: "200MP Hasselblad Periscope" },
@@ -169,7 +165,6 @@ export const articles = [
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/02/Thumbnail-1_20260226_184920.png",
     featured: true,
     views: "985",
-    likes: "310",
     tags: ["Redmi Watch 5 Active", "Smartwatch Review", "Budget Tech", "Wearables", "Xiaomi"],
     tableOfContents: [
       { id: "display-design", title: "2-inch Display & Ergonomics" },
@@ -207,7 +202,6 @@ export const articles = [
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2024/10/wp-17279382710127652237497331143417.png",
     featured: false,
     views: "457",
-    likes: "415",
     tags: ["Lenovo LOQ 15", "Gaming Laptop", "Laptop Review", "Lenovo", "Hardware"],
     tableOfContents: [
       { id: "build-design", title: "Build Quality & Thermal Vents" },

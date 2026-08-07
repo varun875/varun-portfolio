@@ -63,10 +63,6 @@ export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBo
               <Eye size={14} />
               {article.views} Views
             </span>
-            <span className="stat-item" title="Applauds & Likes">
-              <ThumbsUp size={13} />
-              {article.likes}
-            </span>
           </div>
 
           <button className="read-btn" onClick={() => onSelectArticle(article)}>
