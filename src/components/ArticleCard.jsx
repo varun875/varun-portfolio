@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Eye, ThumbsUp, Bookmark, ArrowUpRight, BookOpen } from 'lucide-react';
+import { Clock, Eye, ThumbsUp, Bookmark, ArrowUpRight, BookOpen, Calendar } from 'lucide-react';
 
 export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBookmark }) {
   const getBadgeStyle = (cat) => {
@@ -37,7 +37,10 @@ export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBo
       {/* Card Content */}
       <div className="card-content-body">
         <div className="card-meta-row">
-          <span className="card-date">{article.date}</span>
+          <span className="card-date">
+            <Calendar size={13} />
+            {article.date}
+          </span>
           <span className="meta-dot">•</span>
           <span className="card-read-time">
             <Clock size={13} />
@@ -56,9 +59,9 @@ export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBo
         {/* Card Footer */}
         <div className="card-footer-row">
           <div className="card-stats">
-            <span className="stat-item" title="Total Views">
+            <span className="stat-item" title="Total Reads">
               <Eye size={14} />
-              {article.views}
+              {article.views} Reads
             </span>
             <span className="stat-item" title="Applauds & Likes">
               <ThumbsUp size={13} />
@@ -160,6 +163,12 @@ export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBo
           font-size: 0.82rem;
           color: var(--text-muted);
           margin-bottom: 0.75rem;
+        }
+
+        .card-date {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
         }
 
         .meta-dot {

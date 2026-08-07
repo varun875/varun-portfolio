@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight, Award, Eye, ExternalLink } from 'lucide-react';
+import { Sparkles, ArrowRight, Award, Eye, Calendar, Clock } from 'lucide-react';
 
 export function FeaturedSpotlight({ articles, onSelectArticle }) {
   const featuredArticles = [...articles].filter(a => a.featured).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -21,9 +21,11 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
               <div className="spotlight-meta">
                 <span className="pub-badge-tag">{lead.publication}</span>
                 <span className="meta-sep">•</span>
-                <span>{lead.readTime}</span>
+                <span className="meta-item"><Calendar size={13} /> {lead.date}</span>
                 <span className="meta-sep">•</span>
-                <span>{lead.views} Readers</span>
+                <span className="meta-item"><Clock size={13} /> {lead.readTime}</span>
+                <span className="meta-sep">•</span>
+                <span className="meta-item"><Eye size={13} /> {lead.views} Reads</span>
               </div>
 
               <h2 className="spotlight-title" onClick={() => onSelectArticle(lead)}>
@@ -46,17 +48,19 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
 
               <div className="spotlight-actions">
                 <button className="btn btn-accent" onClick={() => onSelectArticle(lead)}>
-                  <span>Read Full Investigation</span>
+                  <span>Read Full Article</span>
                   <ArrowRight size={16} />
                 </button>
               </div>
             </div>
 
             <div className="spotlight-media" onClick={() => onSelectArticle(lead)}>
-              <img src={lead.coverImage} alt={lead.title} className="spotlight-cover-img" />
+              <div className="spotlight-img-frame">
+                <img src={lead.coverImage} alt={lead.title} className="spotlight-cover-img" />
+              </div>
               <div className="spotlight-badge">
                 <Sparkles size={14} />
-                <span>Featured Investigation</span>
+                <span>Featured Article</span>
               </div>
             </div>
           </div>
@@ -94,6 +98,13 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
           font-size: 0.85rem;
           color: var(--text-muted);
           margin-bottom: 1.25rem;
+          flex-wrap: wrap;
+        }
+
+        .meta-item {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
         }
 
         .pub-badge-tag {
@@ -156,17 +167,35 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
           min-height: 380px;
           cursor: pointer;
           overflow: hidden;
+          background: rgba(0, 0, 0, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1.5rem;
+        }
+
+        .spotlight-img-frame {
+          width: 100%;
+          height: 100%;
+          max-height: 380px;
+          border-radius: var(--radius-md);
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          background: #090d16;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .spotlight-cover-img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
           transition: transform 0.6s ease;
         }
 
         .spotlight-media:hover .spotlight-cover-img {
-          transform: scale(1.05);
+          transform: scale(1.03);
         }
 
         .spotlight-badge {
