@@ -167,7 +167,7 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
           min-height: 380px;
           cursor: pointer;
           overflow: hidden;
-          background: rgba(0, 0, 0, 0.4);
+          background: var(--bg-secondary);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -180,8 +180,8 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
           max-height: 380px;
           border-radius: var(--radius-md);
           overflow: hidden;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-          background: #090d16;
+          box-shadow: var(--shadow-md);
+          background: var(--bg-card);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -202,14 +202,14 @@ export function FeaturedSpotlight({ articles, onSelectArticle }) {
           position: absolute;
           bottom: 1.5rem;
           right: 1.5rem;
-          background: rgba(0, 0, 0, 0.75);
+          background: var(--bg-glass);
           backdrop-filter: blur(10px);
           color: var(--accent-gold);
           font-size: 0.8rem;
           font-weight: 700;
           padding: 0.4rem 0.85rem;
           border-radius: var(--radius-full);
-          border: 1px solid rgba(251, 191, 36, 0.4);
+          border: 1px solid var(--border-hover);
           display: flex;
           align-items: center;
           gap: 0.35rem;

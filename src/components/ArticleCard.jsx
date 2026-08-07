@@ -103,39 +103,14 @@ export function ArticleCard({ article, onSelectArticle }) {
         }
 
         .publication-pill {
-          background: rgba(0, 0, 0, 0.7);
+          background: var(--bg-glass);
           backdrop-filter: blur(8px);
-          color: #ffffff;
+          color: var(--text-primary);
           font-size: 0.75rem;
           font-weight: 700;
           padding: 0.25rem 0.65rem;
           border-radius: var(--radius-full);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .bookmark-btn {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          background: rgba(0, 0, 0, 0.65);
-          backdrop-filter: blur(8px);
-          color: var(--text-primary);
-          border: 1px solid rgba(255, 255, 255, 0.15);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          transition: all var(--transition-fast);
-          z-index: 2;
-        }
-
-        .bookmark-btn:hover, .bookmark-btn.active {
-          background: var(--accent-gold);
-          color: #0f172a;
-          border-color: var(--accent-gold);
+          border: 1px solid var(--border-color);
         }
 
         .card-content-body {
