@@ -35,9 +35,9 @@ export function App() {
   const [bookmarks, setBookmarks] = useState(() => {
     try {
       const saved = localStorage.getItem('portfolio_bookmarks');
-      return saved ? JSON.parse(saved) : ['ai-hallucination-economy', 'the-future-of-longform-prose'];
+      return saved ? JSON.parse(saved) : [];
     } catch {
-      return ['ai-hallucination-economy'];
+      return [];
     }
   });
 
@@ -64,10 +64,7 @@ export function App() {
     });
   };
 
-  const handleOpenContactWithService = (service) => {
-    setContactInitialService(service);
-    setIsContactOpen(true);
-  };
+
 
   const handleExploreArticles = () => {
     const el = document.getElementById('articles');
@@ -114,9 +111,7 @@ export function App() {
       </main>
 
       {/* Footer */}
-      <Footer 
-        onOpenContact={() => { setContactInitialService(null); setIsContactOpen(true); }}
-      />
+      <Footer />
 
       {/* Article Reader Overlay Modal */}
       {selectedArticle && (

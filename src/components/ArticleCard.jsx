@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Eye, ThumbsUp, Bookmark, ArrowUpRight, BookOpen, Calendar } from 'lucide-react';
+import { Clock, Eye, Bookmark, ArrowUpRight, Calendar } from 'lucide-react';
 
 export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBookmark }) {
   const getBadgeStyle = (cat) => {

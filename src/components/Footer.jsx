@@ -48,7 +48,7 @@ export function Footer() {
         {/* Footer Bottom Bar */}
         <div className="footer-bottom-bar">
           <span>© {new Date().getFullYear()} {writerInfo.name}. All rights reserved.</span>
-          <button className="scroll-top-btn" onClick={scrollToTop}>
+          <button className="footer-scroll-btn" onClick={scrollToTop}>
             <span>Back to top</span>
             <ArrowUp size={16} />
           </button>
@@ -144,7 +144,7 @@ export function Footer() {
           color: var(--text-muted);
         }
 
-        .scroll-top-btn {
+        .footer-scroll-btn {
           background: transparent;
           border: none;
           color: var(--text-secondary);
@@ -157,7 +157,7 @@ export function Footer() {
           transition: color var(--transition-fast);
         }
 
-        .scroll-top-btn:hover {
+        .footer-scroll-btn:hover {
           color: var(--accent-gold);
         }
 
