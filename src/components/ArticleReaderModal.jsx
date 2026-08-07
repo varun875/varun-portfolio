@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { X, Clock, Eye, ThumbsUp, Bookmark, Share2, Type, ArrowLeft, Check, List, ExternalLink } from 'lucide-react';
+import { X, Clock, Eye, Share2, Type, ArrowLeft, Check, List, ExternalLink } from 'lucide-react';
 import { writerInfo } from '../data/writerInfo';
 
-export function ArticleReaderModal({ article, onClose, isBookmarked, onToggleBookmark }) {
+export function ArticleReaderModal({ article, onClose }) {
   const [fontSize, setFontSize] = useState('medium'); // 'small', 'medium', 'large'
-  const [likes, setLikes] = useState(parseInt(article.likes) || 0);
-  const [hasLiked, setHasLiked] = useState(false);
   const [copied, setCopied] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -24,16 +22,6 @@ export function ArticleReaderModal({ article, onClose, isBookmarked, onToggleBoo
       return () => modalEl.removeEventListener('scroll', handleScroll);
     }
   }, []);
-
-  const handleLike = () => {
-    if (!hasLiked) {
-      setLikes(prev => prev + 1);
-      setHasLiked(true);
-    } else {
-      setLikes(prev => prev - 1);
-      setHasLiked(false);
-    }
-  };
 
   const handleShare = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -83,14 +71,6 @@ export function ArticleReaderModal({ article, onClose, isBookmarked, onToggleBoo
                 onClick={() => setFontSize('large')}
               >A+</button>
             </div>
-
-            <button 
-              className={`control-btn ${isBookmarked ? 'active' : ''}`} 
-              onClick={() => onToggleBookmark(article.id)}
-              title="Bookmark Article"
-            >
-              <Bookmark size={16} fill={isBookmarked ? "currentColor" : "none"} />
-            </button>
 
             <button className="control-btn" onClick={handleShare} title="Share Link">
               {copied ? <Check size={16} className="text-emerald" /> : <Share2 size={16} />}

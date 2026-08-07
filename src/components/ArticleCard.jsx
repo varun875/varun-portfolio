@@ -1,7 +1,7 @@
 import React from 'react';
-import { Clock, Eye, Bookmark, ArrowUpRight, Calendar } from 'lucide-react';
+import { Clock, Eye, ArrowUpRight, Calendar } from 'lucide-react';
 
-export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBookmark }) {
+export function ArticleCard({ article, onSelectArticle }) {
   const getBadgeStyle = (cat) => {
     switch (cat) {
       case 'Tech & AI': return 'badge-gold';
@@ -25,13 +25,6 @@ export function ArticleCard({ article, onSelectArticle, isBookmarked, onToggleBo
             {article.publication}
           </span>
         </div>
-        <button 
-          className={`bookmark-btn ${isBookmarked ? 'active' : ''}`}
-          onClick={(e) => { e.stopPropagation(); onToggleBookmark(article.id); }}
-          title={isBookmarked ? "Remove Bookmark" : "Save Article"}
-        >
-          <Bookmark size={16} fill={isBookmarked ? "currentColor" : "none"} />
-        </button>
       </div>
 
       {/* Card Content */}

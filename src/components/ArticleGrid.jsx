@@ -6,9 +6,7 @@ export function ArticleGrid({
   articles, 
   onSelectArticle, 
   searchQuery, 
-  setSearchQuery, 
-  bookmarks, 
-  onToggleBookmark 
+  setSearchQuery 
 }) {
   // Always sort articles by date published (Latest first)
   const sortedArticles = useMemo(() => {
@@ -62,8 +60,6 @@ export function ArticleGrid({
                 <ArticleCard 
                   article={article}
                   onSelectArticle={onSelectArticle}
-                  isBookmarked={bookmarks.includes(article.id)}
-                  onToggleBookmark={onToggleBookmark}
                 />
               </div>
             ))}

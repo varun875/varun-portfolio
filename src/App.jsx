@@ -50,40 +50,14 @@ export function App() {
     return () => observer.disconnect();
   }, []);
 
-  // Bookmarks state synced with localStorage
-  const [bookmarks, setBookmarks] = useState(() => {
-    try {
-      const saved = localStorage.getItem('portfolio_bookmarks');
-      return saved ? JSON.parse(saved) : [];
-    } catch {
-      return [];
-    }
-  });
-
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('portfolio_theme', theme);
   }, [theme]);
 
-  useEffect(() => {
-    localStorage.setItem('portfolio_bookmarks', JSON.stringify(bookmarks));
-  }, [bookmarks]);
-
   const toggleTheme = () => {
     setTheme(prev => (prev === 'dark' ? 'paper' : 'dark'));
   };
-
-  const handleToggleBookmark = (articleId) => {
-    setBookmarks(prev => {
-      if (prev.includes(articleId)) {
-        return prev.filter(id => id !== articleId);
-      } else {
-        return [...prev, articleId];
-      }
-    });
-  };
-
-
 
   const handleExploreArticles = () => {
     const el = document.getElementById('articles');
@@ -127,8 +101,6 @@ export function App() {
             onSelectArticle={setSelectedArticle}
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}
-            bookmarks={bookmarks}
-            onToggleBookmark={handleToggleBookmark}
           />
         </div>
 
@@ -145,8 +117,6 @@ export function App() {
         <ArticleReaderModal 
           article={selectedArticle} 
           onClose={() => setSelectedArticle(null)}
-          isBookmarked={bookmarks.includes(selectedArticle.id)}
-          onToggleBookmark={handleToggleBookmark}
         />
       )}
 
