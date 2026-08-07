@@ -12,7 +12,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/redmi-turbo-5/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/06/Thumbnail-1-9-2.png",
     featured: true,
-    views: "18.4K",
+    views: "123",
     likes: "642",
     tags: ["Redmi Turbo 5", "Dimensity 8500 Ultra", "Smartphone", "HyperOS 3", "Tech News"],
     tableOfContents: [
@@ -68,7 +68,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/google-i-o-2026-recap/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/05/Thumbnail-1_20260520_201248.png",
     featured: true,
-    views: "24.1K",
+    views: "275",
     likes: "890",
     tags: ["Google IO 2026", "Gemini 3.5 Flash", "Antigravity CLI", "TPU 8t", "AI News"],
     tableOfContents: [
@@ -106,7 +106,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/oneplus-nord-ce6-launched-in-india/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/05/Thumbnail-1_20260515_111232.png",
     featured: true,
-    views: "15.7K",
+    views: "243",
     likes: "512",
     tags: ["OnePlus Nord CE6", "Snapdragon 7s Gen 4", "8000mAh", "OxygenOS 16"],
     tableOfContents: [
@@ -141,7 +141,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/oppo-find-x9-ultra-launched/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/04/Thumbnail-1-7-2.png",
     featured: false,
-    views: "12.3K",
+    views: "249",
     likes: "430",
     tags: ["OPPO Find X9 Ultra", "Hasselblad", "200MP Camera", "Flagship Phone"],
     tableOfContents: [
@@ -206,7 +206,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/lenovo-loq-15-first-impressions/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2024/10/wp-17279382710127652237497331143417.png",
     featured: false,
-    views: "11.2K",
+    views: "457",
     likes: "415",
     tags: ["Lenovo LOQ 15", "Gaming Laptop", "Laptop Review", "Lenovo", "Hardware"],
     tableOfContents: [
