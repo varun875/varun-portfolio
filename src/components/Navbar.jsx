@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Feather, Search, Moon, Sun, Menu, X, BookOpen, Send } from 'lucide-react';
+import { Feather, Search, Moon, Sun, Menu, X } from 'lucide-react';
 import { writerInfo } from '../data/writerInfo';
 
-export function Navbar({ theme, toggleTheme, onOpenContact, searchQuery, setSearchQuery, isSearching, setIsSearching }) {
+export function Navbar({ theme, toggleTheme, searchQuery, setSearchQuery, isSearching, setIsSearching }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -60,12 +60,6 @@ export function Navbar({ theme, toggleTheme, onOpenContact, searchQuery, setSear
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
-          {/* Contact CTA */}
-          <button className="btn btn-accent desktop-only" onClick={onOpenContact}>
-            <Send size={15} />
-            <span>Contact</span>
-          </button>
-
           {/* Mobile Hamburger Toggle */}
           <button className="mobile-toggle-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -80,10 +74,6 @@ export function Navbar({ theme, toggleTheme, onOpenContact, searchQuery, setSear
             <a href="#articles" onClick={() => setMobileMenuOpen(false)}>Articles</a>
             <a href="#featured" onClick={() => setMobileMenuOpen(false)}>Spotlight</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)}>About {writerInfo.name}</a>
-            <button className="btn btn-accent w-full mt-4" onClick={() => { setMobileMenuOpen(false); onOpenContact(); }}>
-              <Send size={16} />
-              <span>Contact</span>
-            </button>
           </nav>
         </div>
       )}

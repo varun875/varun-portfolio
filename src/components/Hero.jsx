@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, FileText, Award, Eye, Globe, Sparkles } from 'lucide-react';
 import { writerInfo } from '../data/writerInfo';
 
-export function Hero({ onOpenContact, onExploreArticles }) {
+export function Hero({ onExploreArticles }) {
   return (
     <section className="hero-section">
       <div className="container">

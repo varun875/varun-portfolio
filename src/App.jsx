@@ -7,7 +7,6 @@ import { FeaturedSpotlight } from './components/FeaturedSpotlight';
 import { ArticleGrid } from './components/ArticleGrid';
 import { AboutSection } from './components/AboutSection';
 import { ArticleReaderModal } from './components/ArticleReaderModal';
-import { ContactModal } from './components/ContactModal';
 import { Footer } from './components/Footer';
 import { articles } from './data/articles';
 
@@ -17,8 +16,6 @@ export function App() {
   });
 
   const [selectedArticle, setSelectedArticle] = useState(null);
-  const [isContactOpen, setIsContactOpen] = useState(false);
-  const [contactInitialService, setContactInitialService] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -70,7 +67,6 @@ export function App() {
       <Navbar 
         theme={theme} 
         toggleTheme={toggleTheme} 
-        onOpenContact={() => { setContactInitialService(null); setIsContactOpen(true); }}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         isSearching={isSearching}
@@ -80,7 +76,6 @@ export function App() {
       {/* Main Content Sections */}
       <main>
         <Hero 
-          onOpenContact={() => { setContactInitialService(null); setIsContactOpen(true); }} 
           onExploreArticles={handleExploreArticles}
         />
 
@@ -119,13 +114,6 @@ export function App() {
           onClose={() => setSelectedArticle(null)}
         />
       )}
-
-      {/* Contact / Pitch Commission Modal */}
-      <ContactModal 
-        isOpen={isContactOpen}
-        onClose={() => setIsContactOpen(false)}
-        initialService={contactInitialService}
-      />
 
       {/* Floating Scroll To Top Button */}
       {showScrollTop && (
