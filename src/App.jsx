@@ -13,7 +13,7 @@ import { articles } from './data/articles';
 
 export function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('portfolio_theme') || 'dark';
+    return localStorage.getItem('portfolio_theme') || 'paper';
   });
 
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -29,6 +29,25 @@ export function App() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // IntersectionObserver for smooth scroll reveal animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    revealElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 
   // Bookmarks state synced with localStorage
@@ -91,23 +110,31 @@ export function App() {
           onExploreArticles={handleExploreArticles}
         />
 
-        <PublicationsBar />
+        <div className="reveal-on-scroll">
+          <PublicationsBar />
+        </div>
 
-        <FeaturedSpotlight 
-          articles={articles} 
-          onSelectArticle={setSelectedArticle} 
-        />
+        <div className="reveal-on-scroll">
+          <FeaturedSpotlight 
+            articles={articles} 
+            onSelectArticle={setSelectedArticle} 
+          />
+        </div>
 
-        <ArticleGrid 
-          articles={articles}
-          onSelectArticle={setSelectedArticle}
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-          bookmarks={bookmarks}
-          onToggleBookmark={handleToggleBookmark}
-        />
+        <div className="reveal-on-scroll">
+          <ArticleGrid 
+            articles={articles}
+            onSelectArticle={setSelectedArticle}
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+            bookmarks={bookmarks}
+            onToggleBookmark={handleToggleBookmark}
+          />
+        </div>
 
-        <AboutSection />
+        <div className="reveal-on-scroll">
+          <AboutSection />
+        </div>
       </main>
 
       {/* Footer */}

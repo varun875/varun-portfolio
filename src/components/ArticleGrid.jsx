@@ -57,14 +57,15 @@ export function ArticleGrid({
         {/* Grid Display */}
         {sortedArticles.length > 0 ? (
           <div className="articles-grid">
-            {sortedArticles.map(article => (
-              <ArticleCard 
-                key={article.id}
-                article={article}
-                onSelectArticle={onSelectArticle}
-                isBookmarked={bookmarks.includes(article.id)}
-                onToggleBookmark={onToggleBookmark}
-              />
+            {sortedArticles.map((article, idx) => (
+              <div key={article.id} className={`reveal-on-scroll reveal-delay-${(idx % 3) + 1}`}>
+                <ArticleCard 
+                  article={article}
+                  onSelectArticle={onSelectArticle}
+                  isBookmarked={bookmarks.includes(article.id)}
+                  onToggleBookmark={onToggleBookmark}
+                />
+              </div>
             ))}
           </div>
         ) : (
