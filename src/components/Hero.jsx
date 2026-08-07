@@ -35,12 +35,15 @@ export function Hero({ onOpenContact, onExploreArticles }) {
 
             {/* Quick Stats Grid */}
             <div className="hero-stats-grid">
-              {writerInfo.stats.map((stat, index) => (
-                <div key={index} className="stat-card">
-                  <span className="stat-value">{stat.value}</span>
-                  <span className="stat-label">{stat.label}</span>
-                </div>
-              ))}
+              {writerInfo.stats.map((stat, index) => {
+                const isText = isNaN(parseInt(stat.value[0]));
+                return (
+                  <div key={index} className="stat-card">
+                    <span className={`stat-value ${isText ? 'text-value' : ''}`}>{stat.value}</span>
+                    <span className="stat-label">{stat.label}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -141,31 +144,40 @@ export function Hero({ onOpenContact, onExploreArticles }) {
 
         .hero-stats-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.25rem;
-          padding-top: 2rem;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          padding-top: 2.25rem;
           border-top: 1px solid var(--border-color);
         }
 
         .stat-card {
           display: flex;
           flex-direction: column;
+          justify-content: flex-start;
         }
 
         .stat-value {
           font-family: var(--font-heading);
-          font-size: 1.8rem;
+          font-size: 1.7rem;
           font-weight: 800;
           color: var(--text-primary);
-          line-height: 1.1;
+          line-height: 1.25;
+          word-break: break-word;
+        }
+
+        .stat-value.text-value {
+          font-family: var(--font-sans);
+          font-size: 1.05rem;
+          font-weight: 700;
+          color: var(--accent-gold);
         }
 
         .stat-label {
-          font-size: 0.78rem;
+          font-size: 0.76rem;
           color: var(--text-muted);
           text-transform: uppercase;
-          letter-spacing: 0.04em;
-          margin-top: 0.25rem;
+          letter-spacing: 0.05em;
+          margin-top: 0.35rem;
         }
 
         .hero-visual {
