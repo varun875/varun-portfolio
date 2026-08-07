@@ -31,10 +31,6 @@ export function Hero({ onOpenContact, onExploreArticles }) {
                 <span>Explore Articles</span>
                 <ArrowRight size={16} />
               </button>
-              
-              <button className="btn btn-outline" onClick={onOpenContact}>
-                <span>Pitch a Story</span>
-              </button>
             </div>
 
             {/* Quick Stats Grid */}

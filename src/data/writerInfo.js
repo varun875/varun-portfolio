@@ -2,7 +2,7 @@ export const writerInfo = {
   name: "Varun P",
   title: "Senior Content Writer",
   company: "GizmoGeekHub",
-  avatar: "/varun_headshot.png",
+  avatar: "./varun_headshot.png",
   heroTagline: "Writing about smartphones, wearables, laptops, and consumer tech at GizmoGeekHub.",
   bio: "Senior content writer at GizmoGeekHub based in Chennai, India. Over the past two years, I've published 95+ articles covering smartphones, smartwatches, gaming laptops, and major tech news.",
   location: "Chennai, India",
