@@ -247,6 +247,7 @@ h1, h2, h3, h4, .font-serif {
 .glass-card:hover {
   border-color: var(--border-hover);
   box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
 /* Text Truncation */
@@ -290,7 +291,7 @@ h1, h2, h3, h4, .font-serif {
 /* Scroll Reveal Animations */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(32px);
+  transform: translateY(32px) scale(0.985);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
@@ -304,3 +305,23 @@ h1, h2, h3, h4, .font-serif {
 .reveal-delay-2 { transition-delay: 0.24s; }
 .reveal-delay-3 { transition-delay: 0.36s; }
 
+main > .reveal-on-scroll:nth-child(2) { transition-delay: 0.06s; }
+main > .reveal-on-scroll:nth-child(3) { transition-delay: 0.14s; }
+main > .reveal-on-scroll:nth-child(4) { transition-delay: 0.22s; }
+main > .reveal-on-scroll:nth-child(5) { transition-delay: 0.30s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
