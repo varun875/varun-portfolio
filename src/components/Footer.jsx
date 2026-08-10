@@ -1,5 +1,5 @@
 import React from 'react';
-import { Feather, ArrowUp, Twitter, Linkedin, Globe } from 'lucide-react';
+import { Feather, ArrowUp, Globe } from 'lucide-react';
 import { writerInfo } from '../data/writerInfo';
 
 export function Footer() {
@@ -24,10 +24,10 @@ export function Footer() {
             </p>
             <div className="social-links">
               <a href={writerInfo.socials.twitter} target="_blank" rel="noreferrer" className="social-link" title="X (Twitter)">
-                <Twitter size={18} />
+                <span aria-hidden="true" className="social-text">X</span>
               </a>
               <a href={writerInfo.socials.linkedin} target="_blank" rel="noreferrer" className="social-link" title="LinkedIn">
-                <Linkedin size={18} />
+                <span aria-hidden="true" className="social-text">in</span>
               </a>
               <a href={writerInfo.socials.gizmogeekhub} target="_blank" rel="noreferrer" className="social-link" title="GizmoGeekHub">
                 <Globe size={18} />
