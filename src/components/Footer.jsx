@@ -94,11 +94,19 @@ export function Footer() {
           border-radius: 50%;
           background: var(--bg-input);
           border: 1px solid var(--border-color);
+          text-decoration: none;
           color: var(--text-secondary);
           display: flex;
           align-items: center;
           justify-content: center;
           transition: all var(--transition-fast);
+        }
+
+        .social-text {
+          line-height: 1;
+          font-size: 1rem;
+          font-weight: 500;
+          text-decoration: none;
         }
 
         .social-link:hover {

@@ -104,11 +104,12 @@ export function AboutSection() {
         }
 
         .manifesto-text {
-          font-family: var(--font-serif-body);
-          font-style: italic;
+          font-family: var(--font-sans);
+          font-style: normal;
           font-size: 0.95rem;
-          color: var(--text-serif);
-          line-height: 1.5;
+          font-weight: 500;
+          color: var(--text-primary);
+          line-height: 1.65;
         }
 
         .about-badge {
