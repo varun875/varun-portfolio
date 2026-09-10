@@ -20,7 +20,7 @@ export function Footer() {
               <span className="brand-name">{writerInfo.name}</span>
             </div>
             <p className="footer-brand-desc">
-              Senior Content Writer at GizmoGeekHub based in {writerInfo.location}. Covering consumer technology, AI innovations, hardware reviews, and software trends.
+              Content Writer at GizmoGeekHub based in {writerInfo.location}. Covering consumer technology, AI innovations, hardware reviews, and software trends.
             </p>
             <div className="social-links">
               <a href={writerInfo.socials.twitter} target="_blank" rel="noreferrer" className="social-link" title="X (Twitter)">

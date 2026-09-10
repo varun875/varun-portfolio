@@ -24,7 +24,7 @@ export function Navbar({ theme, toggleTheme, searchQuery, setSearchQuery, isSear
           </div>
           <div className="brand-text">
             <span className="brand-name">{writerInfo.name}</span>
-            <span className="brand-sub">Senior Content Writer @ GizmoGeekHub</span>
+            <span className="brand-sub">Content Writer @ GizmoGeekHub</span>
           </div>
         </a>
 

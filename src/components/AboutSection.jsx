@@ -39,7 +39,7 @@ export function AboutSection() {
             </h2>
 
             <p className="about-p">
-              Hi, I'm <strong>Varun P.</strong>, a senior content writer at <strong>GizmoGeekHub</strong> based in Chennai, India. Over the past two years, I've published 95+ articles covering smartphones, smartwatches, gaming laptops, and major tech news.
+              Hi, I'm <strong>Varun P.</strong>, a Content Writer at <strong>GizmoGeekHub</strong> based in Chennai, India. Over the past two years, I've published 95+ articles covering smartphones, smartwatches, gaming laptops, and major tech news.
             </p>
 
             <p className="about-p">

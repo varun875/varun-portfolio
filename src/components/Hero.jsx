@@ -11,7 +11,7 @@ export function Hero({ onExploreArticles }) {
           <div className="hero-content">
             <div className="badge badge-gold hero-badge">
               <Sparkles size={13} />
-              <span>Senior Content Writer @ GizmoGeekHub</span>
+              <span>Content Writer @ GizmoGeekHub</span>
             </div>
 
             <h1 className="hero-title">
