@@ -1,6 +1,6 @@
 # Varun P — Writer Portfolio
 
-Personal portfolio website for **Varun P**, Senior Content Writer at [GizmoGeekHub](https://gizmogeekhub.com/).
+Personal portfolio website for **Varun P**, Content Writer at [GizmoGeekHub](https://gizmogeekhub.com/).
 
 **Live site:** [varun875.github.io/varun-portfolio](https://varun875.github.io/varun-portfolio/)
 
