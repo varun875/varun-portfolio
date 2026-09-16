@@ -1,57 +1,43 @@
 export const articles = [
   {
-    id: "redmi-turbo-5-launch",
-    title: "Redmi Turbo 5 Launched in India: 7540mAh Battery & Dimensity 8500 Ultra",
-    subtitle: "Inspired by racing aesthetics with Redmi Turbo Matrix ring lights, 3500 nits AMOLED, and 100W Hypercharge.",
-    excerpt: "Redmi Turbo 5 has launched in India featuring a massive 7540mAh battery, MediaTek Dimensity 8500 Ultra processor, 120Hz 3500 nits AMOLED display, and 100W Hypercharge capability under ₹40,000.",
-    category: "Smartphones",
+    id: "oppo-coloros-16-launch",
+    title: "Oppo Unveils ColorOS 16: A Bold New Upgrade",
+    subtitle: "Aurora Engine, AI-powered features, and seamless animations define OPPO's latest OS update.",
+    excerpt: "OPPO has announced ColorOS 16 with the Aurora Engine delivering 40% smoother app response, AI Flash Memorize, dynamic live wallpapers, and cross-device ecosystem connectivity.",
+    category: "Software",
     readTime: "6 min read",
-    date: "June 24, 2026",
+    date: "October 16, 2025",
     publication: "GizmoGeekHub",
-    publicationBadge: "Featured Review",
-    link: "https://gizmogeekhub.com/redmi-turbo-5/",
-    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/06/Thumbnail-1-9-2.png",
-    featured: true,
-    views: "123",
-    tags: ["Redmi Turbo 5", "Dimensity 8500 Ultra", "Smartphone", "HyperOS 3", "Tech News"],
+    publicationBadge: "Software Deep Dive",
+    link: "https://gizmogeekhub.com/oppo-unveils-the-coloros-16/",
+    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2025/10/Thumbnail-1-3-860x484.png",
+    featured: false,
+    views: "639",
+    tags: ["ColorOS 16", "OPPO", "Aurora Engine", "Android", "AI Features"],
     tableOfContents: [
-      { id: "design", title: "Design & Turbo Matrix" },
-      { id: "display", title: "Display & Refresh Rate" },
-      { id: "performance", title: "Performance & Cooling" },
-      { id: "cameras", title: "IMX882 Camera Setup" },
-      { id: "battery", title: "7540mAh Battery & 100W Charge" },
-      { id: "pricing", title: "India Pricing & Verdict" }
+      { id: "aurora-engine", title: "Aurora Engine Performance" },
+      { id: "smooth-scaling", title: "Tidal Engine & Seamless Scaling" },
+      { id: "ai-features", title: "AI Flash Memorize & Briefing" },
+      { id: "themes", title: "AI-Inspired Themes & Wallpapers" },
+      { id: "ecosystem", title: "Oppo Ecosystem Connectivity" }
     ],
     content: `
-      <p class="lead">Redmi Turbo 5 has officially landed in India. Combining racing-inspired ergonomics, top-tier performance benchmarks, and unprecedented battery life, it sets a bold new standard for gaming smartphones under ₹40,000.</p>
+      <p class="lead">OPPO has announced ColorOS 16, succeeding ColorOS 15 with major performance upgrades, AI-powered productivity features, and a redesigned visual language powered by the Aurora Engine.</p>
 
-      <h3 id="design">1. Design & Redmi Turbo Matrix</h3>
-      <p>The Redmi Turbo 5 introduces the Redmi Turbo Matrix with customizable ring lights embedded around the camera housing. Inspired by supercar telemetry, the lights pulse with notifications, music, and gaming triggers. Offering 8 selectable colors and adjustable brightness, the phone weighs 204g and measures 8.1mm thick despite packing a 7540mAh battery.</p>
+      <h3 id="aurora-engine">1. Aurora Engine Performance</h3>
+      <p>The Aurora Engine introduces Android's first seamless architecture through cross-module integrated seamless drawing and distribution response scheduling. This delivers a 40% improvement in application click response smoothness and a 52% improvement in sliding frame stability for third-party applications. Clicks and swipes are now responded to quickly, with screen elements transitioning in one go.</p>
 
-      <h3 id="display">2. Display Specs</h3>
-      <p>Equipped with a 6.59-inch 120Hz AMOLED panel with adaptive sync, 480Hz touch sampling rate, and 2560Hz instantaneous touch rate. The screen achieves a peak brightness of 3500 nits, is protected by Corning Gorilla Glass 7i, and features 3840Hz PWM dimming for reduced eye fatigue during extended gaming sessions.</p>
+      <h3 id="smooth-scaling">2. Tidal Engine & Seamless Scaling</h3>
+      <p>The new Tidal Engine features chip-level dynamic frame tracking, deeply coordinating software and hardware architectures to build an animation-exclusive computing channel. Heavy load smoothness improves by 37%, temperature rise is lower by 4.1 degrees, and power consumption reduced by 13% — meaning the battery lasts longer during gaming or performance-demanding tasks.</p>
 
-      <div class="data-callout">
-        <h4>Hardware Quick Specs</h4>
-        <ul>
-          <li><strong>Processor:</strong> MediaTek Dimensity 8500 Ultra (2.1M+ Antutu score)</li>
-          <li><strong>Battery:</strong> 7540 mAh with 100W Hypercharge & 27W Reverse Charging</li>
-          <li><strong>Camera:</strong> 50MP Sony IMX882 OIS + 8MP Ultrawide + 20MP Front</li>
-          <li><strong>Software:</strong> Xiaomi HyperOS 3 on Android 16 (4 years OS upgrades)</li>
-        </ul>
-      </div>
+      <h3 id="ai-features">3. AI Flash Memorize & Briefing</h3>
+      <p>AI one-click flash memory can now record documents, pictures, meal codes, bills, and videos with a single tap to the cloud. Flash Memorize extracts core information from videos and generates structured AI chapter summaries. AI Briefing pushes personalized headlines, weather, to-do items, and news every morning based on your preferences.</p>
 
-      <h3 id="performance">3. Performance & Thermal Management</h3>
-      <p>Powered by the MediaTek Dimensity 8500 Ultra paired with LPDDR5X RAM and UFS 4.1 storage, the Turbo 5 utilizes WildBoost Optimization for sustained frame rates. It integrates 3D Ice-Loop cooling with a 5300mm² stainless steel LHP vapor chamber to sustain 120 FPS gaming on over 20 top titles.</p>
+      <h3 id="themes">4. AI-Inspired Themes & Wallpapers</h3>
+      <p>Live photos can now be set as lock screen wallpapers with AI-generated depth-of-field effects. Static wallpapers come alive with AI live wallpaper transforming landscapes and pets into dynamic backgrounds. Desktop icons, cards, and folders can be freely resized with customizable shortcut functions.</p>
 
-      <h3 id="cameras">4. Camera Architecture</h3>
-      <p>Featuring a 50MP Sony IMX882 primary sensor with OIS and 4K 60fps video capability. Advanced AI tools like AI Erase and AI Recognition allow seamless photo cleanup and enhanced color accuracy directly from the gallery app.</p>
-
-      <h3 id="battery">5. Battery & Hypercharging</h3>
-      <p>The standout 7540mAh cell provides up to 2.3 days of moderate use, retaining 80% capacity after 1,600 charging cycles. Supplied 100W Hypercharging takes the battery from 0 to 50% in just 31 minutes.</p>
-
-      <h3 id="pricing">6. India Pricing</h3>
-      <p>Priced at ₹37,999 for the 8GB+256GB model and ₹40,999 for the 12GB+256GB configuration. Bank discounts bring effective starting prices down to ₹35,999.</p>
+      <h3 id="ecosystem">5. Oppo Ecosystem Connectivity</h3>
+      <p>ColorOS 16 supports cross-device sharing of albums, documents, notes, and phone books with a single touch. Apple Watch integration allows answering calls and viewing exercise data on the connected phone. Mac and Windows screen mirroring supports up to five simultaneous applications with seamless notification syncing.</p>
     `
   },
   {
@@ -92,37 +78,44 @@ export const articles = [
     `
   },
   {
-    id: "oneplus-nord-ce6-launch",
-    title: "OnePlus Nord CE6 Launched in India: 8000mAh Battery & 144Hz AMOLED",
-    subtitle: "Exploring specs, gaming benchmarks, camera changes, and OxygenOS 16 update commitments.",
-    excerpt: "OnePlus has introduced the Nord CE6 in India with an impressive 8000mAh battery, 144Hz AMOLED display, IP69 rating, and Snapdragon 7s Gen 4 processor starting at ₹29,999.",
-    category: "Smartphones",
-    readTime: "5 min read",
-    date: "May 15, 2026",
+    id: "intel-core-ultra-200-series",
+    title: "Intel Core Ultra 200 Series: Arrow Lake Desktop CPUs Fully Detailed",
+    subtitle: "Lion Cove IPC gains, Xe-LPG graphics, LGA1851 socket, and a major efficiency leap over Raptor Lake.",
+    excerpt: "Intel's Core Ultra 200 series desktop CPUs bring 9% IPC uplift, 32% E-core gains, Xe-LPG integrated graphics, Thunderbolt 4, and up to 58% lower package power on the TSMC N3B node.",
+    category: "PC Hardware",
+    readTime: "7 min read",
+    date: "October 12, 2024",
     publication: "GizmoGeekHub",
-    publicationBadge: "Launch Specs",
-    link: "https://gizmogeekhub.com/oneplus-nord-ce6-launched-in-india/",
-    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/05/Thumbnail-1_20260515_111232.png",
-    featured: true,
-    views: "243",
-    tags: ["OnePlus Nord CE6", "Snapdragon 7s Gen 4", "8000mAh", "OxygenOS 16"],
+    publicationBadge: "Hardware Analysis",
+    link: "https://gizmogeekhub.com/intel-core-ultra-200-series-full-details/",
+    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2024/10/thumbnailcopy281292813293556528475800510171.jpg",
+    featured: false,
+    views: "598",
+    tags: ["Intel Core Ultra 200", "Arrow Lake", "LGA1851", "Xe-LPG", "Desktop CPU"],
     tableOfContents: [
-      { id: "design-build", title: "Design & IP69 Rating" },
-      { id: "display-tech", title: "144Hz Crystal Guard Display" },
-      { id: "battery-charging", title: "8000mAh Battery Performance" },
-      { id: "pricing-deals", title: "India Pricing & Variants" }
+      { id: "performance", title: "Lion Cove & Skymont IPC Gains" },
+      { id: "gaming", title: "Gaming Performance & Efficiency" },
+      { id: "ai-efficiency", title: "AI, Content Creation & Efficiency" },
+      { id: "platform", title: "LGA1851 Platform & Overclocking" },
+      { id: "pricing", title: "SKU Pricing & Availability" }
     ],
     content: `
-      <p class="lead">The OnePlus Nord CE6 elevates mid-range battery endurance with an 8000mAh battery while introducing IP69 water and dust protection.</p>
+      <p class="lead">Intel has unveiled the Core Ultra 200 series desktop CPUs codenamed Arrow Lake, built on TSMC N3B with a new LGA1851 socket, bringing major IPC gains and efficiency improvements over Raptor Lake.</p>
 
-      <h3 id="design-build">1. Ergonomics & Build</h3>
-      <p>Featuring golden-ratio curved edges, a 1.7mm slim camera housing, and quad IP ratings (IP66/68/69/69K). Colors include Fresh Blue, Lunar Pearl, and Pitch Black.</p>
+      <h3 id="performance">1. Lion Cove & Skymont IPC Gains</h3>
+      <p>The Lion Cove P-cores deliver a 9% IPC uplift over Raptor Cove, hitting up to 8% faster single-threaded performance than the 14900K and up to 13% faster multi-threaded than AMD's 9950X. The new Skymont E-cores bring a massive 32% IPC improvement over Gracemont, with 2x faster AI throughput. Arrow Lake ditches hyper-threading, giving one thread per core.</p>
 
-      <h3 id="display-tech">2. 144Hz Display & Touch Reflex</h3>
-      <p>A 6.78-inch FHD+ 144Hz AMOLED screen with 3600 nits peak brightness and a Touch Reflex chip enabling a 3200Hz touch sampling rate for high-frequency gaming.</p>
+      <h3 id="gaming">2. Gaming Performance & Efficiency</h3>
+      <p>Intel claims the 285K delivers similar frame rates to the 14900K while using up to 165W less system power — an average of 73W saved across titles. CPU package temperatures run 13 degrees cooler with a 360mm AIO at 1080p. While the 285K trails AMD's 9950X by 9% on average in gaming, it leads by 19% in content creation workloads.</p>
 
-      <h3 id="battery-charging">3. 8000mAh Battery</h3>
-      <p>Supported by 80W SuperVOOC fast charging, providing 1.5 hours of gaming performance from a quick 10-minute top-up.</p>
+      <h3 id="ai-efficiency">3. AI, Content Creation & Efficiency</h3>
+      <p>The integrated NPU provides 13 TOPS of AI power with a total platform output of 36 TOPS. Arrow Lake delivers up to 2x AI performance over Raptor Lake across CPU, GPU, and NPU benchmarks. On efficiency, Arrow Lake draws up to 58% lower package power in lightly threaded workloads while matching performance at half the power.</p>
+
+      <h3 id="platform">4. LGA1851 Platform & Overclocking</h3>
+      <p>The new LGA1851 socket pairs with Intel 800-series chipsets offering 24 PCIe 4.0 lanes, integrated Thunderbolt 4, Killer Wi-Fi 6E, and DDR5-6400 support. Overclocking gets granular with 16.6 MHz frequency steps, independent base clocks for compute and SoC tiles, and CUDIMM memory support up to 192GB.</p>
+
+      <h3 id="pricing">5. SKU Pricing & Availability</h3>
+      <p>Preorders began October 24, 2024. The Core Ultra 9 285K starts at $589, the 265K at $394, the 265KF at $379, the 245K at $309, and the 245KF at $294.</p>
     `
   },
   {
@@ -164,7 +157,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/redmi-watch-5-active-review-2026/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/02/Thumbnail-1_20260226_184920.png",
     featured: true,
-    views: "985",
+    views: "1311",
     tags: ["Redmi Watch 5 Active", "Smartwatch Review", "Budget Tech", "Wearables", "Xiaomi"],
     tableOfContents: [
       { id: "display-design", title: "2-inch Display & Ergonomics" },
