@@ -119,44 +119,44 @@ export const articles = [
     `
   },
   {
-    id: "lenovo-loq-2025-launch",
-    title: "Lenovo LOQ 2025 Launched in India: A Powerful New Gamer's Choice",
-    subtitle: "Gen 10 LOQs bring RTX 50 series GPUs, 245W chargers, 24-zone RGB, and a 5MP QHD webcam.",
-    excerpt: "Lenovo has launched the Gen 10 LOQ laptops in India with Nvidia RTX 5050/5060 GPUs, 245W charging out of the box, upgraded 5MP webcams, and 24-zone RGB keyboards starting at ₹95,000.",
-    category: "Laptops",
+    id: "mediatek-dimensity-9500-launched",
+    title: "MediaTek Dimensity 9500 Launched: A Powerful Next-Gen Chipset",
+    subtitle: "All-big core architecture, Mali-G1 Ultra MC12 GPU, and NPU 990 with compute-in-memory.",
+    excerpt: "MediaTek's Dimensity 9500 brings an all-big core CPU with Arm C1 Ultra at 4.21GHz, 32% faster single-core performance, Mali-G1 Ultra MC12 graphics, and the NPU 990 with 2x token generation speed.",
+    category: "Chipsets",
     readTime: "6 min read",
-    date: "August 10, 2025",
+    date: "September 24, 2025",
     publication: "GizmoGeekHub",
-    publicationBadge: "Launch Coverage",
-    link: "https://gizmogeekhub.com/lenovo-loq-2025-launched-in-india-a-powerful-new-gamers-choice/",
-    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2025/08/Untitled_20250810_201908-860x484.png",
+    publicationBadge: "Chipset Deep Dive",
+    link: "https://gizmogeekhub.com/mediatek-dimensity-9500-launched/",
+    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2025/09/Untitled-13-860x484.png",
     featured: false,
-    views: "626",
-    tags: ["Lenovo LOQ 2025", "RTX 5060", "Gaming Laptop", "Gen 10 LOQ", "India Launch"],
+    views: "515",
+    tags: ["MediaTek Dimensity 9500", "Arm C1 Ultra", "Mali-G1 Ultra", "NPU 990", "Chipset"],
     tableOfContents: [
-      { id: "design", title: "Design & 24-Zone RGB" },
-      { id: "display", title: "Display Options & Refresh Rate" },
-      { id: "performance", title: "CPU & RTX 50 Series Performance" },
-      { id: "connectivity", title: "Connectivity & Battery" },
-      { id: "pricing", title: "India Pricing & Variants" }
+      { id: "cpu", title: "All-Big Core CPU Architecture" },
+      { id: "gpu", title: "Mali-G1 Ultra MC12 & Ray Tracing" },
+      { id: "npu", title: "NPU 990 & Compute-in-Memory" },
+      { id: "isp", title: "Imagiq 1100 ISP & 200MP Capture" },
+      { id: "launch", title: "Power Efficiency & Launch Devices" }
     ],
     content: `
-      <p class="lead">Lenovo India has launched the Gen 10 LOQ gaming laptops with RTX 50 series GPUs, a standard 245W charger across all models, and several quality-of-life upgrades over the Gen 9 lineup.</p>
+      <p class="lead">MediaTek has launched the Dimensity 9500 as a significant upgrade over the Dimensity 9400, delivering major gains across CPU, GPU, and NPU performance with an all-big core design.</p>
 
-      <h3 id="design">1. Design & 24-Zone RGB</h3>
-      <p>The new LOQs feature a redesigned keyboard that distinguishes them from Gen 9, an improved grey chassis finish to address color fading, and a 24-zone RGB lighting system upgraded from the previous 4-zone setup. Dual 2W speakers with Nahimic audio tuning round out the package.</p>
+      <h3 id="cpu">1. All-Big Core CPU Architecture</h3>
+      <p>The Dimensity 9500 uses a completely new all-big core design: 1x Arm C1 Ultra clocked at 4.21GHz, 3x C1 Premium, and 4x C1 Pro, backed by 16MB L3 and 10MB SLC cache. That's a 32% single-core and 17% multi-core uplift over the previous generation, with up to 55% less power on the C1 Ultra cores.</p>
 
-      <h3 id="display">2. Display Options & Refresh Rate</h3>
-      <p>The default panel is a 15.6-inch 1080p display with 144Hz refresh, 100% sRGB, and 300 nits brightness, while the LOQ 17 defaults to 165Hz. A 1440p 165Hz panel with 350 nits is available as an upgrade, and Lenovo now offers customization across all Gen 10 models.</p>
+      <h3 id="gpu">2. Mali-G1 Ultra MC12 & Ray Tracing</h3>
+      <p>The ARM Mali-G1 Ultra MC12 GPU claims 35% faster peak performance and 42% better power efficiency. MediaTek reports a 120% ray-tracing improvement over the Dimensity 9400, with 3DMark demonstrating over 200% gains in ray-traced workloads. MRFC 3.0 boosts supported titles from 60fps to 120fps.</p>
 
-      <h3 id="performance">3. CPU & RTX 50 Series Performance</h3>
-      <p>Intel models retain Gen 9 CPU options (13450HX, 13650HX, 14700HX), while the AMD 15AHP10 moves to a 15-30W U-class chip. Graphics come from Nvidia RTX 5050 and 5060 GPUs with 8GB VRAM and 100W TGP plus Dynamic Boost. An AI core tunes CPU, GPU, and power allocation based on the game being played.</p>
+      <h3 id="npu">3. NPU 990 & Compute-in-Memory</h3>
+      <p>The MediaTek NPU 990 with Generative AI Engine 2.0 doubles compute power while introducing Bitnet 1.58, cutting power consumption by up to 33%. It delivers 2x faster token generation, the industry's first 4K text-to-image generation, and 128k token long-text processing. It's also the first to support integrated compute-in-memory, enabling continuous AI model execution.</p>
 
-      <h3 id="connectivity">4. Connectivity & Battery</h3>
-      <p>Ports include three USB-A 3.2 Gen 1, a USB-C with 65-100W PD and DisplayPort 1.4, HDMI 2.1 supporting 8K at 60Hz, a 3.5mm jack, and Gigabit Ethernet. The webcam jumps to a 5MP QHD unit with an e-shutter, and the 245W charger addresses Gen 9's battery drain issues. A 60Wh battery ships by default with an 80Wh upgrade path.</p>
+      <h3 id="isp">4. Imagiq 1100 ISP & 200MP Capture</h3>
+      <p>The Imagiq 1100 ISP supports Raw-domain pre-processing up to 200MP at 30fps with continuous focus tracking, a new portrait engine, and cinematic 4K 60fps portrait video. MiraVision adaptive display tech dynamically adjusts contrast and saturation based on ambient lighting and content.</p>
 
-      <h3 id="pricing">5. India Pricing & Variants</h3>
-      <p>The LOQ 17IRX10 starts at ₹97,000, the 15IRX10 at ₹99,000, and the AMD 15AHP10 at ₹95,000. All models are customizable, though the 17-inch variant lacks the QHD and RTX 5060 options available on the 15-inch models.</p>
+      <h3 id="launch">5. Power Efficiency & Launch Devices</h3>
+      <p>AI-powered communication delivers up to 10% lower power in 5G and 20% lower in Wi-Fi, with 5CC carrier aggregation boosting bandwidth by 15%. The Dimensity 9500 is set to compete with Qualcomm's Snapdragon 8 Elite Gen 5 and is expected to power the OPPO Find X9 Pro and Vivo X300 in Q4 2025.</p>
     `
   },
   {
