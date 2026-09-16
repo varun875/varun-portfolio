@@ -119,29 +119,44 @@ export const articles = [
     `
   },
   {
-    id: "oppo-find-x9-ultra",
-    title: "OPPO Find X9 Ultra Launched: 200MP Hasselblad Telephoto & 7050mAh Battery",
-    subtitle: "Flagship mobile photography redefined with quad 50MP/200MP sensors and ColorOS 16.",
-    excerpt: "OPPO Find X9 Ultra breaks boundaries in mobile photography with a 200MP Hasselblad telephoto periscope camera, Snapdragon 8 Gen 5, and 7050mAh silicon-carbon battery.",
-    category: "Flagships",
-    readTime: "7 min read",
-    date: "April 25, 2026",
+    id: "lenovo-loq-2025-launch",
+    title: "Lenovo LOQ 2025 Launched in India: A Powerful New Gamer's Choice",
+    subtitle: "Gen 10 LOQs bring RTX 50 series GPUs, 245W chargers, 24-zone RGB, and a 5MP QHD webcam.",
+    excerpt: "Lenovo has launched the Gen 10 LOQ laptops in India with Nvidia RTX 5050/5060 GPUs, 245W charging out of the box, upgraded 5MP webcams, and 24-zone RGB keyboards starting at ₹95,000.",
+    category: "Laptops",
+    readTime: "6 min read",
+    date: "August 10, 2025",
     publication: "GizmoGeekHub",
-    publicationBadge: "Camera Deep Dive",
-    link: "https://gizmogeekhub.com/oppo-find-x9-ultra-launched/",
-    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/04/Thumbnail-1-7-2.png",
+    publicationBadge: "Launch Coverage",
+    link: "https://gizmogeekhub.com/lenovo-loq-2025-launched-in-india-a-powerful-new-gamers-choice/",
+    coverImage: "https://gizmogeekhub.com/wp-content/uploads/2025/08/Untitled_20250810_201908-860x484.png",
     featured: false,
-    views: "249",
-    tags: ["OPPO Find X9 Ultra", "Hasselblad", "200MP Camera", "Flagship Phone"],
+    views: "626",
+    tags: ["Lenovo LOQ 2025", "RTX 5060", "Gaming Laptop", "Gen 10 LOQ", "India Launch"],
     tableOfContents: [
-      { id: "hasselblad-camera", title: "200MP Hasselblad Periscope" },
-      { id: "display-battery", title: "Display & 7050mAh Battery" }
+      { id: "design", title: "Design & 24-Zone RGB" },
+      { id: "display", title: "Display Options & Refresh Rate" },
+      { id: "performance", title: "CPU & RTX 50 Series Performance" },
+      { id: "connectivity", title: "Connectivity & Battery" },
+      { id: "pricing", title: "India Pricing & Variants" }
     ],
     content: `
-      <p class="lead">OPPO Find X9 Ultra targets mobile photographers demanding uncompromised optical zoom and multi-day battery reliability.</p>
+      <p class="lead">Lenovo India has launched the Gen 10 LOQ gaming laptops with RTX 50 series GPUs, a standard 245W charger across all models, and several quality-of-life upgrades over the Gen 9 lineup.</p>
 
-      <h3 id="hasselblad-camera">1. 200MP Hasselblad Telephoto</h3>
-      <p>Featuring a 200MP periscope telephoto lens with 4.3x optical and up to 120x computational zoom, tuned by Hasselblad color calibration algorithms.</p>
+      <h3 id="design">1. Design & 24-Zone RGB</h3>
+      <p>The new LOQs feature a redesigned keyboard that distinguishes them from Gen 9, an improved grey chassis finish to address color fading, and a 24-zone RGB lighting system upgraded from the previous 4-zone setup. Dual 2W speakers with Nahimic audio tuning round out the package.</p>
+
+      <h3 id="display">2. Display Options & Refresh Rate</h3>
+      <p>The default panel is a 15.6-inch 1080p display with 144Hz refresh, 100% sRGB, and 300 nits brightness, while the LOQ 17 defaults to 165Hz. A 1440p 165Hz panel with 350 nits is available as an upgrade, and Lenovo now offers customization across all Gen 10 models.</p>
+
+      <h3 id="performance">3. CPU & RTX 50 Series Performance</h3>
+      <p>Intel models retain Gen 9 CPU options (13450HX, 13650HX, 14700HX), while the AMD 15AHP10 moves to a 15-30W U-class chip. Graphics come from Nvidia RTX 5050 and 5060 GPUs with 8GB VRAM and 100W TGP plus Dynamic Boost. An AI core tunes CPU, GPU, and power allocation based on the game being played.</p>
+
+      <h3 id="connectivity">4. Connectivity & Battery</h3>
+      <p>Ports include three USB-A 3.2 Gen 1, a USB-C with 65-100W PD and DisplayPort 1.4, HDMI 2.1 supporting 8K at 60Hz, a 3.5mm jack, and Gigabit Ethernet. The webcam jumps to a 5MP QHD unit with an e-shutter, and the 245W charger addresses Gen 9's battery drain issues. A 60Wh battery ships by default with an 80Wh upgrade path.</p>
+
+      <h3 id="pricing">5. India Pricing & Variants</h3>
+      <p>The LOQ 17IRX10 starts at ₹97,000, the 15IRX10 at ₹99,000, and the AMD 15AHP10 at ₹95,000. All models are customizable, though the 17-inch variant lacks the QHD and RTX 5060 options available on the 15-inch models.</p>
     `
   },
   {
