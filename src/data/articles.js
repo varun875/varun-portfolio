@@ -12,7 +12,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/oppo-unveils-the-coloros-16/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2025/10/Thumbnail-1-3-860x484.png",
     featured: false,
-    views: "639",
+    views: "706",
     tags: ["ColorOS 16", "OPPO", "Aurora Engine", "Android", "AI Features"],
     tableOfContents: [
       { id: "aurora-engine", title: "Aurora Engine Performance" },
@@ -53,7 +53,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/google-i-o-2026-recap/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/05/Thumbnail-1_20260520_201248.png",
     featured: true,
-    views: "275",
+    views: "457",
     tags: ["Google IO 2026", "Gemini 3.5 Flash", "Antigravity CLI", "TPU 8t", "AI News"],
     tableOfContents: [
       { id: "gemini-flash", title: "Gemini 3.5 Flash Speed" },
@@ -90,7 +90,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/intel-core-ultra-200-series-full-details/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2024/10/thumbnailcopy281292813293556528475800510171.jpg",
     featured: false,
-    views: "598",
+    views: "639",
     tags: ["Intel Core Ultra 200", "Arrow Lake", "LGA1851", "Xe-LPG", "Desktop CPU"],
     tableOfContents: [
       { id: "performance", title: "Lion Cove & Skymont IPC Gains" },
@@ -131,7 +131,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/mediatek-dimensity-9500-launched/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2025/09/Untitled-13-860x484.png",
     featured: false,
-    views: "515",
+    views: "563",
     tags: ["MediaTek Dimensity 9500", "Arm C1 Ultra", "Mali-G1 Ultra", "NPU 990", "Chipset"],
     tableOfContents: [
       { id: "cpu", title: "All-Big Core CPU Architecture" },
@@ -172,7 +172,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/redmi-watch-5-active-review-2026/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2026/02/Thumbnail-1_20260226_184920.png",
     featured: true,
-    views: "1311",
+    views: "1442",
     tags: ["Redmi Watch 5 Active", "Smartwatch Review", "Budget Tech", "Wearables", "Xiaomi"],
     tableOfContents: [
       { id: "display-design", title: "2-inch Display & Ergonomics" },
@@ -209,7 +209,7 @@ export const articles = [
     link: "https://gizmogeekhub.com/lenovo-loq-15-first-impressions/",
     coverImage: "https://gizmogeekhub.com/wp-content/uploads/2024/10/wp-17279382710127652237497331143417.png",
     featured: false,
-    views: "457",
+    views: "573",
     tags: ["Lenovo LOQ 15", "Gaming Laptop", "Laptop Review", "Lenovo", "Hardware"],
     tableOfContents: [
       { id: "build-design", title: "Build Quality & Thermal Vents" },
